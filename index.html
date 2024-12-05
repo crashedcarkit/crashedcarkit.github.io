@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva:wght@100..400&display=swap');</style>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');</style>
+    <title>kit</title>
+    <style>
+      body {
+        background-color: rgb(243, 237, 229);
+      }
+      .center {
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+      }
+      .collapsible {
+        background-color: rgb(243, 237, 229);
+        color:black;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: center;
+        outline: none;
+        font-family: "Playfair Display", serif;
+        font-size: 100%;
+        font-weight: 400;
+        border-radius: 30px;
+        transition: 0.5s ease-out;
+      }
+      .content {
+        padding-left: 1%;
+        padding-right: 1%;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.5s ease-out;
+        background-color: rgb(243, 237, 229);
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+      }
+      .active {
+        background-color: rgb(193, 187, 179);
+      }
+      .content.collapsible {
+        background-color: rgb(193, 187, 179);
+      }
+      .collapsible:hover {
+        background-color: rgb(193, 187, 179);
+      }
+      .info {
+        width: 50%;
+        justify-content: center;
+      }
+      .main {
+        border-radius: 25px;
+        border: 1% black;
+        border-style: dashed;
+        width: 540px;
+        margin: auto;
+      }
+      .s1 {
+        
+        display: flex;
+      }
+      .mzen {
+        padding: 1.5%;
+        width: 50%;
+      }
+      h1 {
+        font-family: "Playwrite HR Lijeva", cursive;
+        font-size: 300%;
+        font-style: italic;
+        font-weight: 400;
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        text-decoration-thickness: 7.5%;
+        padding: 25px;
+      }
+      h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 150%;
+        font-weight: 600;
+        padding: 25px;
+      }
+      h3, a {
+        font-family: "Playfair Display", serif;
+        font-size: 100%;
+        font-weight: 400;
+        padding: 10%;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <h1 class="center">kit!</h1>
+    <div class="main">
+      <div class="s1">
+        <div class="mzen">
+          <img src="mizuena.jpg" alt="original by @mom0nnnu on twitter" style="width: 100%; padding: 10; border-radius: 25px;">
+          <a href="https://x.com/mom0nnnu/status/1519334416144732162" style="display: flex; justify-content: center; align-items: center;">by @mom0nnnu on twitter</a>
+        </div>
+        <div class="info">
+          <h2>kit, he, 16</h2>
+          <h3><b>main interests</b> prsk, persona, sel<br><b>i play </b>osu, prsk, quake, pjdv<br><b>i listen to</b> duster, julie, goreshit, rie20s, bladee, linkin park, limp bizkit<br><b>before you interact</b> i can occasionally come off very dry, sorry<br><b>basic dni</b> applies</h3>
+        </div>
+      </div>
+      <button type="button" class="collapsible">｡･ﾟﾟ･   ena5cord   ･ﾟﾟ･｡ </button>
+      <div class="content"><img src="ena5corders.png" style="width: 100%; padding: 5; border-radius: 25px;"></a></div>
+    </div>
+    <script>var coll = document.getElementsByClassName("collapsible");
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          this.classList.toggle("darken");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+}</script>
+  </body>
+</html>
