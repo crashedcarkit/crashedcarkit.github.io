@@ -7,12 +7,14 @@
     <title>kit</title>
     <style>
       body {
-        background-color: rgb(243, 237, 229);
+        background-color: rgb(26, 28, 37);
+        background-image: url("noise.png");
+        background-blend-mode: multiply;
       }
       .emphasis {
         text-decoration-line: underline;
         text-decoration-style: wavy;
-        text-decoration-color: black;
+        text-decoration-color: rgb(131, 153, 176);
       }
       .center {
         display: flex; 
@@ -20,8 +22,8 @@
         align-items: center;
       }
       .collapsible {
-        background-color: rgb(243, 237, 229);
-        color:black;
+        background-color: rgb(26, 28, 37);
+        color:rgb(131, 153, 176);
         cursor: pointer;
         padding: 18px;
         width: 100%;
@@ -40,18 +42,18 @@
         max-height: 0;
         overflow: hidden;
         transition: all 0.5s ease-out;
-        background-color: rgb(243, 237, 229);
+        background-color: rgb(26, 28, 37);
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 30px;
       }
       .active {
-        background-color: rgb(193, 187, 179);
+        background-color: rgb(81, 103, 126);
       }
       .content.collapsible {
-        background-color: rgb(193, 187, 179);
+        background-color: rgb(81, 103, 126);
       }
       .collapsible:hover {
-        background-color: rgb(193, 187, 179);
+        background-color: rgb(81, 103, 126);
       }
       .info {
         width: 50%;
@@ -59,7 +61,8 @@
       }
       .main {
         border-radius: 25px;
-        border: 1% black;
+        border: 1%;
+        border-color: rgb(131, 153, 176);
         border-style: dashed;
         width: 540px;
         margin: auto;
@@ -76,6 +79,7 @@
         font-size: 300%;
         font-style: italic;
         font-weight: 400;
+        color: rgb(131, 153, 176);
         text-decoration: underline;
         text-decoration-style: dotted;
         text-decoration-thickness: 7.5%;
@@ -85,6 +89,7 @@
         font-family: "Playfair Display", serif;
         font-size: 150%;
         font-weight: 600;
+        color: rgb(131, 153, 176);
         padding-left: 30%;
         padding-top: 3%;
         
@@ -93,6 +98,7 @@
         font-family: "Playfair Display", serif;
         font-size: 100%;
         font-weight: 400;
+        color: rgb(101, 123, 146);
         padding-top: 3%;
         padding-left: 10%;
         padding-right: 10%;
